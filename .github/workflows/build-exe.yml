@@ -28,7 +28,7 @@ jobs:
         pyinstaller --onefile --windowed operatör_uygulaması.py  # Burada dosyanızın ismini yazın
 
     - name: Upload EXE as artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3  # Güncellenmiş eylem sürümü
       with:
         name: built-exe
         path: ./dist/*.exe  # EXE dosyasını yükler
